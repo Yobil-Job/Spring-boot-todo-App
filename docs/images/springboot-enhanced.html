@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Enhanced Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .spring-boot-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .spring-boot-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6db33f, #5a9e3a, #4a8c2e);
+        }
+        
+        .logo-section {
+            position: relative;
+        }
+        
+        .spring-leaf {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+        
+        .leaf-main {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6db33f 0%, #5a9e3a 50%, #4a8c2e 100%);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            transform: rotate(45deg);
+            box-shadow: 0 4px 15px rgba(109, 179, 63, 0.4);
+        }
+        
+        .leaf-secondary {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #7bc142 0%, #6db33f 50%, #5a9e3a 100%);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            transform: rotate(25deg);
+            top: 8px;
+            left: 8px;
+            opacity: 0.8;
+        }
+        
+        .leaf-tertiary {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #8bc34a 0%, #7bc142 50%, #6db33f 100%);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            transform: rotate(15deg);
+            top: 15px;
+            left: 15px;
+            opacity: 0.6;
+        }
+        
+        .center-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            top: 36px;
+            left: 36px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .main-text {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #6db33f 0%, #5a9e3a 100%);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(109, 179, 63, 0.3);
+            margin-top: 5px;
+            width: fit-content;
+        }
+        
+        .decorative-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+        
+        .deco-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6db33f, #5a9e3a);
+            opacity: 0.1;
+        }
+        
+        .deco-1 {
+            width: 20px;
+            height: 20px;
+            top: 10px;
+            right: 20px;
+        }
+        
+        .deco-2 {
+            width: 15px;
+            height: 15px;
+            bottom: 15px;
+            right: 10px;
+        }
+        
+        .deco-3 {
+            width: 12px;
+            height: 12px;
+            bottom: 25px;
+            left: 15px;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .spring-leaf {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="spring-boot-container">
+        <div class="decorative-elements">
+            <div class="deco-circle deco-1"></div>
+            <div class="deco-circle deco-2"></div>
+            <div class="deco-circle deco-3"></div>
+        </div>
+        
+        <div class="logo-section">
+            <div class="spring-leaf">
+                <div class="leaf-main"></div>
+                <div class="leaf-secondary"></div>
+                <div class="leaf-tertiary"></div>
+                <div class="center-dot"></div>
+            </div>
+        </div>
+        
+        <div class="text-section">
+            <div class="main-text">Spring Boot</div>
+            <div class="subtitle">Framework</div>
+            <div class="version-badge">v3.5.4</div>
+        </div>
+    </div>
+</body>
+</html>

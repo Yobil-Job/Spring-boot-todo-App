@@ -201,6 +201,6 @@ src/main/java/com/yobil/TodoApplication/my_springboot_todo_application/
 
 **Built with Spring Boot - Focused on Robust Backend Architecture**
 
-![Spring Boot Logo](docs/images/spring-boot-logo.png)
+![Spring Boot Banner](docs/images/springbootbanner.png)
 
 </div> 
