@@ -1,0 +1,120 @@
+# Maven target directory
+target/
+
+# Maven wrapper jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Prevent committing generated target/build folders in source/test folders
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# STS Eclipse stuff
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+.idea/workspace.xml
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+# Application properties (ignore config with secrets)
+src/main/resources/application.properties
+src/main/resources/application-dev.properties
+src/main/resources/application-prod.properties
+src/main/resources/application-local.properties
+
+# Docker overrides/local files (optional)
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Logs and temp files
+*.log
+logs/
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (optional, if you don't want to track help files)
+HELP.md
+
+# Additional Spring Boot specific ignores
+*.jar
+*.war
+*.ear
+*.class
+
+# Package Files
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.properties
+
+# Gradle (if you ever switch)
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE specific files
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+
+# Node modules (if you add frontend later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Test reports
+test-results/
+reports/
